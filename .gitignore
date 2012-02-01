@@ -1,0 +1,11 @@
+# ignore all temporarily created objects
+*.o
+*.so
+*.d
+
+#ignore C and C-header files created by yacc and flex
+*.tab.*
+
+# ignore all created executables
+simulator
+assembler
