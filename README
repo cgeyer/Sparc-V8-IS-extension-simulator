@@ -27,16 +27,25 @@ Version 1.00
 The software is optimzed to work on GNU/Linux; any compilations on other
 OSs may not work or need individual adaptions. Tested on Ubuntu 10.04 LTS.
 
-Compiling the simulator:
+Compiling simulator and assembler:
 	(1) Start compiling:
-		make 
-	(2) In case you occur any compiling errors check the following
+		'make all'
+	(2) In case you occur any compiling errors, check the following
 	    packages to be installed:
 		* gcc
 		* libc-dev
 		* gnu make
 		* flex
 		* yacc
+
+Simulate example files:
+	(1) Download and install llvm extension:
+	    'git clone git://github.com/cgeyer/llvm-cbg.git'
+	(2) Change to examples directory
+	(3) Adapt path to llvm (LLVMDIR) in Makefile
+	(4) run 'make all'
+	(5) all assembler files can be found in examples/asmfiles,
+	    all logfiles of the simulation in examples/logfiles
 
 More information to be added soon...
 
