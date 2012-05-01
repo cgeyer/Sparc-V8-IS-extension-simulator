@@ -56,7 +56,8 @@ vpath %.o $(OBJDIR)
 vpath %.so $(LDIR)
 
 CC=gcc
-CFLAGS=-Wall -Wextra -Werror -Wno-unused-parameter -Wno-unused-function -Wno-implicit-function-declaration -std=c99
+#CFLAGS=-Wall -Wextra -Werror -Wno-unused-parameter -Wno-unused-function -Wno-implicit-function-declaration -std=c99
+CFLAGS=-Wall -Wextra -Wno-unused-parameter -Wno-unused-function -Wno-implicit-function-declaration -std=c99
 IFLAGS=-I$(INCLUDE)
 ASMLFLAGS=-ly -ll -ldl
 SIMLFLAGS=-ldl
